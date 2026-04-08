@@ -4,7 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Set Current Year in Footer
     const yearEls = document.querySelectorAll('#currentYear');
     const currentYear = new Date().getFullYear();
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 navbar.style.paddingBottom = "1rem";
             }
         };
-        
+
         // Initial check
         checkScroll();
         // Add scroll event listener
@@ -69,12 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize animations immediately for elements currently in DOM
     initScrollAnimations();
-    
+
     // Trigger animations for elements that are already in viewport on load
     setTimeout(() => {
         const evt = new Event('scroll');
         window.dispatchEvent(evt);
-        
+
         // Ensure hero elements fade in immediately on load
         document.querySelectorAll('.hero .fade-in-up').forEach(el => {
             el.classList.add('is-visible');
