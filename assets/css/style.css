@@ -147,11 +147,11 @@ body {
   object-position: center;
 }
 .about-image-frame {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0;
 }
 .about-image-badge {
   max-width: 320px;
-  margin: -4rem 1.5rem 0 auto;
+  margin: 1rem 0 0 auto;
   padding: 1rem 1.25rem;
   border-radius: 1.25rem;
   background: rgba(255, 255, 255, 0.96);
